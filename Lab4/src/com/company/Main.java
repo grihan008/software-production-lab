@@ -4,9 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Product product = new Product("Edam", 3.3, 120);
         System.out.println("Product value is " + product.countValue());
-        System.out.println();
         product.printProduct();
-        product.changeBalance(54);
+        product.changeBalance(12);
     }
 }
 
@@ -23,8 +22,8 @@ class Product {
         return(amount * price);
     }
 
-    public void changeBalance(int newvalue){
-        System.out.printf("I am changing the balance to %d", newvalue);
+    public void changeBalance(int newValue){
+        System.out.printf("changeBalance");
     }
 
     public void printProduct() {
